@@ -4,8 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-
-var weibohotCrawListRouter = require('./server/controllers/crawling/weibohotCrawList');
+var testRouter=require('./server/controllers/test');
+var crawling=require('./server/controllers/crawling/weibohotCrawList');//app.js引入weibohotCrawList.js定时任务内部执行 不需要路由
 var weibohotListRouter = require('./server/controllers/weibohotList');
 var weibohotDetailsListRouter = require('./server/controllers/weibohotDetailsList');
 
@@ -27,9 +27,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'web/public')));
-app.use( express.static(path.join(__dirname, 'web/views')));//访问views目录下的html
+app.use(express.static(path.join(__dirname, 'web/views')));//访问views目录下的html
 
-app.use('/weibohotCrawList', weibohotCrawListRouter);
+app.use('/test', testRouter);
 app.use('/weibohotList', weibohotListRouter);
 app.use('/weibohotDetails', weibohotDetailsListRouter);
 

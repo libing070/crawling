@@ -38,20 +38,22 @@ function printInfo(slideListData) {
     // 计数
     var count = 0;
     // 遍历信息列表
-    slideListData.forEach(function(item) {
-        // 获取图片
-        var url=item.url;
-        var title=item.title;
-        var main_toppic_html = item.main_toppic_html;
-        var main_editor_html = item.main_editor_html;
-        //添加实例
-        var  addSql = 'INSERT INTO details(url,title,maintoppic,maineditor,createtime) VALUES(?,?,?,?,?)';
-        var  addSqlParams =[url, title,main_toppic_html,main_editor_html,new Date(),];
-        // db.query(addSql,addSqlParams,function(result,fields){
-        //    // console.log('添加成功')
-        // });
+    if(slideListData!=null&&slideListData!=undefined&&slideListData.length>0){
+        slideListData.forEach(function(item) {
+            // 获取图片
+            var url=item.url;
+            var title=item.title;
+            var main_toppic_html = item.main_toppic_html;
+            var main_editor_html = item.main_editor_html;
+            //添加实例
+            var  addSql = 'INSERT INTO details(url,title,maintoppic,maineditor,createtime) VALUES(?,?,?,?,?)';
+            var  addSqlParams =[url, title,main_toppic_html,main_editor_html,new Date(),];
+            db.query(addSql,addSqlParams,function(result,fields){
+                // console.log('添加成功')
+            });
 
-    });
+        });
+    }
 }
 
 module.exports={

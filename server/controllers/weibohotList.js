@@ -4,7 +4,7 @@ var router = express.Router();
 
 //获取最新的十条数据
 router.get('/dbList',function(req,res,next){
-    var selectSql='select * from crawlings order by id DESC limit 10';
+    var selectSql='select * from crawlings order by createtimestring DESC limit 10';
     db.query(selectSql,function(result,fields){
         if(fields.length>0){
             res.json(fields);

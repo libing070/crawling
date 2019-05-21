@@ -1,5 +1,4 @@
 var express = require('express');
-var router = express.Router();
 var request = require('request');
 // Cheerio 是一个Node.js的库， 它可以从html的片断中构建DOM结构，然后提供像jquery一样的css选择器查询
 var cheerio = require('cheerio');
@@ -16,11 +15,12 @@ new CronJob('10 * * * * *', function() {//每分钟的第十秒执行
     const d = new Date();
     console.log(d);
     request({
-        url: 'https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=2&lefnav=0&cursor=&__rnd=1557920631872', // 请求的URL
+        url: 'https://weibo.com/a/aj/transform/loadingmoreunlogin?ajwvr=6&category=1760&page=2&lefnav=0&cursor=&__rnd=1558319103467', // 请求的URL
         method: 'GET', // 请求方法
         headers: { // 指定请求头
             'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8', // 指定 Accept-Language
-            'Cookie': 'Ugrow-G0=8751d9166f7676afdce9885c6d31cd61; SUB=_2AkMrhyJ1f8NxqwJRmfodzG3hb4h_wgHEieKd29OuJRMxHRl-yT9jqkUgtRB6AAcMm0DRLw1GHeLdXmZIDmzKRTJobbpU; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5YEj-j-kzRNorjKoKHzXED; login_sid_t=4299ab35c6deb6913526d99578b30fca; cross_origin_proto=SSL; TC-V5-G0=634dc3e071d0bfd86d751caf174d764e; _s_tentry=passport.weibo.com; wb_view_log=1280*7201.5; Apache=3524170772658.133.1557900616633; SINAGLOBAL=3524170772658.133.1557900616633; ULV=1557900616643:1:1:1:3524170772658.133.1557900616633:; YF-V5-G0=70942dbd611eb265972add7bc1c85888; UOR=,,localhost:63342; YF-Page-G0=aedd5f0bc89f36e476d1ce3081879a4e|1557918956|1557918954; TC-Page-G0=45685168db6903150ce64a1b7437dbbb|1557919760|1557919752; WBStorage=e4e08ad1044aa883|undefined' // 指定 Cookie
+           // 'Cookie': 'Ugrow-G0=8751d9166f7676afdce9885c6d31cd61; SUB=_2AkMrhyJ1f8NxqwJRmfodzG3hb4h_wgHEieKd29OuJRMxHRl-yT9jqkUgtRB6AAcMm0DRLw1GHeLdXmZIDmzKRTJobbpU; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5YEj-j-kzRNorjKoKHzXED; login_sid_t=4299ab35c6deb6913526d99578b30fca; cross_origin_proto=SSL; TC-V5-G0=634dc3e071d0bfd86d751caf174d764e; _s_tentry=passport.weibo.com; wb_view_log=1280*7201.5; Apache=3524170772658.133.1557900616633; SINAGLOBAL=3524170772658.133.1557900616633; ULV=1557900616643:1:1:1:3524170772658.133.1557900616633:; YF-V5-G0=70942dbd611eb265972add7bc1c85888; UOR=,,localhost:63342; YF-Page-G0=aedd5f0bc89f36e476d1ce3081879a4e|1557918956|1557918954; TC-Page-G0=45685168db6903150ce64a1b7437dbbb|1557919760|1557919752; WBStorage=e4e08ad1044aa883|undefined' // 指定 Cookie
+            'Cookie':'Ugrow-G0=8751d9166f7676afdce9885c6d31cd61; SUB=_2AkMrvoEcf8NxqwJRmfodzG3hb4h_wgHEieKd4nDHJRMxHRl-yT83qm0OtRB6AD6v8nxfGB0kFuUTs0CuqiSgwgtvi949; SUBP=0033WrSXqPxfM72-Ws9jqgMF55529P9D9W5YEj-j-kzRNorjKoKHzXED; login_sid_t=c24c0a0b99cae90b8eacaba35fa7e60a; cross_origin_proto=SSL; YF-V5-G0=8c4aa275e8793f05bfb8641c780e617b; WBStorage=53830d4156ad61ab|undefined; _s_tentry=passport.weibo.com; wb_view_log=1280*7201.5; Apache=3172373771683.963.1558318642381; SINAGLOBAL=3172373771683.963.1558318642381; ULV=1558318642394:1:1:1:3172373771683.963.1558318642381:; YF-Page-G0=afcf131cd4181c1cbdb744cd27663d8d|1558318675|1558318674'
         }
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
@@ -87,35 +87,36 @@ function printInfo(slideListData) {
     // 计数
     var count = 0;
     // 遍历信息列表
-    slideListData.forEach(function(item) {
-        // 获取图片
-        var url = item.url;
-        var picurl = item.picurl;
-        var title = item.title;
-        var titleurl = item.titleurl;
-        var iconurl = item.iconurl;
-        var icontitle=item.icontitle;
-        var time = item.time;
+    if(slideListData!=null&&slideListData!=undefined&&slideListData.length>0){
+        slideListData.forEach(function(item) {
+            // 获取图片
+            var url = item.url;
+            var picurl = item.picurl;
+            var title = item.title;
+            var titleurl = item.titleurl;
+            var iconurl = item.iconurl;
+            var icontitle=item.icontitle;
+            var time = item.time;
 
-        // 打印信息
-        // console.log('第' + (++count) + '条数据');
-        // console.log(url);
-        // console.log(picurl);
-        // console.log(title);
-        // console.log(titleurl);
-        // console.log(iconurl);
-        // console.log(icontitle);
-        // console.log(time);
-        // console.log('\n');
-        //添加实例
-        var  addSql = 'INSERT INTO crawlings(url,title,titleurl,picurl,iconurl,icontitle,time,createtime,createtimestring) VALUES(?,?,?,?,?,?,?,?,?)';
-         var  addSqlParams =[url, title,titleurl,picurl,iconurl, icontitle,time,new Date(),new Date().getTime()];
-        // db.query(addSql,addSqlParams,function(result,fields){
-        // });
+            // 打印信息
+            console.log('第' + (++count) + '条数据');
+            console.log(url);
+            console.log(picurl);
+            console.log(title);
+            console.log(titleurl);
+            console.log(iconurl);
+            console.log(icontitle);
+            console.log(time);
+            console.log('\n');
+            //添加实例
+            var  addSql = 'INSERT INTO crawlings(url,title,titleurl,picurl,iconurl,icontitle,time,createtime,createtimestring) VALUES(?,?,?,?,?,?,?,?,?)';
+            var  addSqlParams =[url, title,titleurl,picurl,iconurl, icontitle,time,new Date(),new Date().getTime()+count];
+            db.query(addSql,addSqlParams,function(result,fields){
+            });
 
+        });
+    }
 
-
-    });
 }
 
 //抓取详情页数据
@@ -124,4 +125,3 @@ function getDetailsData(slideListData) {
     details.weibohotCrawDetails(slideListData);
 }
 
-module.exports = router;

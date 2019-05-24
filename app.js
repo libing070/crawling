@@ -2,7 +2,8 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+ var loggermorgan = require('morgan');
+var logger=require('./server/node_modules/node_log').logger.getLogger();
 var bodyParser = require('body-parser');
 var testRouter=require('./server/controllers/test');
 var crawling=require('./server/controllers/crawling/weibohotCrawList');//app.js引入weibohotCrawList.js定时任务内部执行 不需要路由
@@ -19,7 +20,7 @@ app.set('views', path.join(__dirname, 'web/views'));
 app.engine('.html',ejs.__express);//使用html
 app.set('view engine', 'html');
 
-app.use(logger('dev'));
+ app.use(loggermorgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -51,6 +52,6 @@ app.use(function(err, req, res, next) {
 });
 
 var server = app.listen(3000, function () {
-    console.log('服务启动成功!!');
+    logger.info("-----------------------------------[服务器已开启。端口号为:3000]-------------------------------------------");
 });
 

@@ -1,0 +1,85 @@
+[2019-05-24T12:07:36.063] [INFO] info - -----------------------------------[服务器已开启。端口号为:3000]-------------------------------------------
+[2019-05-24T12:07:49.418] [INFO] info - 请求接口：[/weibohotList/dbList]  sql：[select * from crawlings order by createtimestring DESC limit 10]
+[2019-05-24T12:07:49.630] [INFO] info - 返回数据集：[{"id":13803,"url":"https://weibo.com/ttarticle/p/show?id=2309351000964374127375974348","title":"快快评|河南“盗婴事件”原是母亲导演，我们的同情心为何又被耍？","titleurl":"https://weibo.com/ttarticle/p/show?id=2309351000964374127375974348","picurl":"https://wx4.sinaimg.cn/crop.83.0.438.329.240/005M94J9ly4g382p9lajoj30gt095taa.jpg","iconurl":"https://tvax3.sinaimg.cn/crop.0.0.180.180.50/62bfcf76ly8fy5kaim52sj20500503ym.jpg","icontitle":"现代快报","time":"5月20日 20:08","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510224"},{"id":13809,"url":"https://weibo.com/ttarticle/p/show?id=2309404374082845057783","title":"【小黑说球】“浪漫主义”和“理性”","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374082845057783","picurl":null,"iconurl":"https://tva4.sinaimg.cn/crop.241.0.768.768.50/5c13cdbdjw8f74gr57ai0j20sg0lc0ur.jpg","icontitle":"小黑爱看球","time":"5月20日 17:54","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510222"},{"id":13808,"url":"https://weibo.com/ttarticle/p/show?id=2309404374090143116588","title":"第二届中国生态文明奖先进集体和先进个人拟表彰名单公示","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374090143116588","picurl":"https://wx1.sinaimg.cn/crop.307.0.465.349.240/006C3CYZly4g37xjzqcjuj30tz09pweu.jpg","iconurl":"https://tvax1.sinaimg.cn/crop.0.0.180.180.50/006C3CYZly8fpmipe9b4sj3050050mxd.jpg","icontitle":"生态环境部","time":"5月20日 18:23","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510220"},{"id":13804,"url":"https://weibo.com/ttarticle/p/show?id=2309404374036724479796","title":"【每日稳胆挑选】哥德堡主场稳定，哈马比异地作战欠缺状态。","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374036724479796","picurl":"https://wx4.sinaimg.cn/crop.100.0.1133.850.240/0078nAMggy1fwrg1v9zdlj31120nmwjo.jpg","iconurl":"https://tvax4.sinaimg.cn/crop.30.44.671.671.50/0078nAMgly8frr44u5yhxj30kc0kcaby.jpg","icontitle":"世界杯足彩王者","time":"5月20日 14:51","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510218"},{"id":13802,"url":"https://weibo.com/ttarticle/p/show?id=2309351001194374148393653584","title":"单身独居女子想将遗产留给两条狗，公证处：无法可依，爱莫能助！","titleurl":"https://weibo.com/ttarticle/p/show?id=2309351001194374148393653584","picurl":"https://wx4.sinaimg.cn/crop.94.0.562.422.240/006Gsagrly1g3812yc4osj30ku0bq0v1.jpg","iconurl":"https://tva1.sinaimg.cn/crop.0.0.180.180.50/6693ce84jw8f1m1dfr6sfj2050050aab.jpg","icontitle":"楚天都市报","time":"5月20日 20:49","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510216"},{"id":13801,"url":"https://weibo.com/ttarticle/p/show?id=2309404374096002584500","title":"关注主线品种","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374096002584500","picurl":"https://wx3.sinaimg.cn/crop.156.0.930.698.240/0065p1O8ly1g37z3jfotmj30yi0je75z.jpg","iconurl":"https://tvax4.sinaimg.cn/crop.0.0.512.512.50/0065p1O8ly8g2lgnwn9fcj30e80e8jrn.jpg","icontitle":"七号金牌技师-小师父DD","time":"5月20日 18:46","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510212"},{"id":13810,"url":"https://weibo.com/ttarticle/p/show?id=2309351002454374133742945844","title":"公交“暖心伞”借多还少：杭州不减投放，暂不考虑强制还伞","titleurl":"https://weibo.com/ttarticle/p/show?id=2309351002454374133742945844","picurl":"https://wx2.sinaimg.cn/crop.0.63.600.450.240/005M94J9ly4g37wz97nwbj30go0hrwft.jpg","iconurl":"https://tvax1.sinaimg.cn/crop.11.10.275.275.50/005vnhZYly8ftjmwo0bx4j308c08cq32.jpg","icontitle":"澎湃新闻","time":"5月20日 17:29","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510209"},{"id":13807,"url":"https://weibo.com/ttarticle/p/show?id=2309404374150012636339","title":"抗争！继续跟年糕妈妈打官司！","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374150012636339","picurl":"https://wx2.sinaimg.cn/crop.257.0.585.439.240/71c26dc5gy1g3854krkxvj20uj0c70z7.jpg","iconurl":"https://tva3.sinaimg.cn/crop.61.34.139.139.50/71c26dc5jw8f3vyncqid9j206z05l3yd.jpg","icontitle":"眼科小超人老梁","time":"5月20日 22:21","createtime":"2019-05-23T11:05:10.000Z","createtimestring":"1558609510208"},{"id":13800,"url":"https://weibo.com/ttarticle/p/show?id=2309404374159059748221","title":"当你不想上班时，请看看这15张照片","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374159059748221","picurl":"https://wx1.sinaimg.cn/crop.159.0.274.206.240/60718250ly4g383hw3udtj20gg05qt8m.jpg","iconurl":"https://tvax2.sinaimg.cn/crop.18.21.500.500.50/60718250ly1fe7kog3jroj20f00f03zj.jpg","icontitle":"头条新闻","time":"5月20日 22:57","createtime":"2019-05-23T11:04:11.000Z","createtimestring":"1558609450560"},{"id":13795,"url":"https://weibo.com/ttarticle/p/show?id=2309404374067716203356","title":"华为的硬气从何而来？","titleurl":"https://weibo.com/ttarticle/p/show?id=2309404374067716203356","picurl":"https://wx4.sinaimg.cn/crop.125.0.749.562.240/8226a45cly1g37vthh2m7j20rs0fmguu.jpg","iconurl":"https://tva2.sinaimg.cn/crop.0.0.180.180.50/8226a45cjw1e8qgp5bmzyj2050050aa8.jpg","icontitle":"雪球","time":"5月20日 16:54","createtime":"2019-05-23T11:04:11.000Z","createtimestring":"1558609450558"}]
+[2019-05-24T12:07:49.645] [INFO] info - 请求接口：[/weibohotList/dbListSum]  sql：[select count(*) as sum from crawlings]
+[2019-05-24T12:07:49.681] [INFO] info - 返回数据集：[{"sum":6506}]
+[2019-05-24T12:08:10.858] [INFO] info - 第1条数据
+[2019-05-24T12:08:10.858] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404374763479909878
+[2019-05-24T12:08:10.858] [INFO] info - https://wx2.sinaimg.cn/crop.0.0.723.542.240/007HlRSGly4g3a3qmzfvzj30k30gc75h.jpg
+[2019-05-24T12:08:10.858] [INFO] info - 马云冒雨见他，并亲自为他打伞，得知身份后网友沸腾：隐形的大佬
+[2019-05-24T12:08:10.858] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404374763479909878
+[2019-05-24T12:08:10.858] [INFO] info - https://tvax4.sinaimg.cn/crop.49.48.122.122.50/007HlRSGly8g1jmh3irmpj3064064747.jpg
+[2019-05-24T12:08:10.858] [INFO] info - 熊孩子的娱乐日志
+[2019-05-24T12:08:10.859] [INFO] info - 5月22日 14:59
+[2019-05-24T12:08:10.859] [INFO] info - 
+
+[2019-05-24T12:08:10.859] [INFO] info - 第2条数据
+[2019-05-24T12:08:10.859] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375418252733574
+[2019-05-24T12:08:10.859] [INFO] info - https://wx2.sinaimg.cn/crop.125.0.749.562.240/006Gsagrly1g3bqkciwp0j30rs0fmt9b.jpg
+[2019-05-24T12:08:10.859] [INFO] info - 中国13家运营737MAX的航空公司均已向波音提出索赔
+[2019-05-24T12:08:10.859] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375418252733574
+[2019-05-24T12:08:10.860] [INFO] info - https://tvax1.sinaimg.cn/crop.11.10.275.275.50/005vnhZYly8ftjmwo0bx4j308c08cq32.jpg
+[2019-05-24T12:08:10.860] [INFO] info - 澎湃新闻
+[2019-05-24T12:08:10.860] [INFO] info - 今天 09:56
+[2019-05-24T12:08:10.860] [INFO] info - 
+
+[2019-05-24T12:08:10.860] [INFO] info - 第3条数据
+[2019-05-24T12:08:10.860] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002344375391925092671
+[2019-05-24T12:08:10.860] [INFO] info - https://wx1.sinaimg.cn/crop.0.0.550.412.240/005M94J9ly4g3c3xlxuxbj30fa0bgjse.jpg
+[2019-05-24T12:08:10.860] [INFO] info - 双创、招人、招商…临沂发布132个机会清单
+[2019-05-24T12:08:10.860] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002344375391925092671
+[2019-05-24T12:08:10.860] [INFO] info - https://tvax2.sinaimg.cn/crop.0.0.1080.1080.50/53acf16aly8g1uvyy0e3zj20u00u0q4u.jpg
+[2019-05-24T12:08:10.860] [INFO] info - 琅琊新闻网
+[2019-05-24T12:08:10.861] [INFO] info - 今天 06:38
+[2019-05-24T12:08:10.861] [INFO] info - 
+
+[2019-05-24T12:08:10.861] [INFO] info - 第4条数据
+[2019-05-24T12:08:10.861] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002154375396182299797
+[2019-05-24T12:08:10.861] [INFO] info - https://wx1.sinaimg.cn/crop.0.83.540.405.240/005M94J9ly4g3c4f710ayj30f00nbq54.jpg
+[2019-05-24T12:08:10.861] [INFO] info - 河南南阳造出只需加水即可行驶的汽车发动机？专家：噱头
+[2019-05-24T12:08:10.861] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002154375396182299797
+[2019-05-24T12:08:10.861] [INFO] info - https://tvax2.sinaimg.cn/crop.35.5.526.526.50/593793e5ly8g1r26yfg8gj20gq0f5dfo.jpg
+[2019-05-24T12:08:10.861] [INFO] info - 封面新闻
+[2019-05-24T12:08:10.861] [INFO] info - 今天 07:55
+[2019-05-24T12:08:10.861] [INFO] info - 
+
+[2019-05-24T12:08:10.862] [INFO] info - 第5条数据
+[2019-05-24T12:08:10.862] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375423772413306
+[2019-05-24T12:08:10.862] [INFO] info - https://wx2.sinaimg.cn/crop.125.0.749.562.240/006Gsagrly1g3bqkciwp0j30rs0fmt9b.jpg
+[2019-05-24T12:08:10.862] [INFO] info - 南阳回应“只需加水车就能开”：正在开会，统一口径后回复
+[2019-05-24T12:08:10.862] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375423772413306
+[2019-05-24T12:08:10.862] [INFO] info - https://tvax1.sinaimg.cn/crop.11.10.275.275.50/005vnhZYly8ftjmwo0bx4j308c08cq32.jpg
+[2019-05-24T12:08:10.867] [INFO] info - 澎湃新闻
+[2019-05-24T12:08:10.867] [INFO] info - 今天 10:40
+[2019-05-24T12:08:10.867] [INFO] info - 
+
+[2019-05-24T12:08:10.868] [INFO] info - 第6条数据
+[2019-05-24T12:08:10.868] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375410023490970
+[2019-05-24T12:08:10.868] [INFO] info - https://wx2.sinaimg.cn/crop.125.0.749.562.240/006Gsagrly1g3bqkciwp0j30rs0fmt9b.jpg
+[2019-05-24T12:08:10.869] [INFO] info - 贵州翻船事故已致10人遇难8人失联，船主已被警方控制
+[2019-05-24T12:08:10.869] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309351002454375410023490970
+[2019-05-24T12:08:10.869] [INFO] info - https://tvax1.sinaimg.cn/crop.11.10.275.275.50/005vnhZYly8ftjmwo0bx4j308c08cq32.jpg
+[2019-05-24T12:08:10.869] [INFO] info - 澎湃新闻
+[2019-05-24T12:08:10.869] [INFO] info - 今天 09:29
+[2019-05-24T12:08:10.869] [INFO] info - 
+
+[2019-05-24T12:08:10.871] [INFO] info - 第7条数据
+[2019-05-24T12:08:10.871] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404375394831734012
+[2019-05-24T12:08:10.871] [INFO] info - https://wx3.sinaimg.cn/crop.0.112.801.600.240/8d056a17ly1g3c49h5b9jj20m90v8dgi.jpg
+[2019-05-24T12:08:10.872] [INFO] info - 王源：带着伤痕上路，也带着星河抵达。
+[2019-05-24T12:08:10.872] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404375394831734012
+[2019-05-24T12:08:10.872] [INFO] info - https://tvax2.sinaimg.cn/crop.0.0.1002.1002.50/8d056a17ly8g2amb01mc0j20ru0rudj4.jpg
+[2019-05-24T12:08:10.872] [INFO] info - 涓涓温柔途径过百川_
+[2019-05-24T12:08:10.872] [INFO] info - 今天 08:48
+[2019-05-24T12:08:10.872] [INFO] info - 
+
+[2019-05-24T12:08:10.873] [INFO] info - 第8条数据
+[2019-05-24T12:08:10.873] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404375391769870618
+[2019-05-24T12:08:10.873] [INFO] info - https://wx2.sinaimg.cn/crop.178.0.194.146.240/006Gsagrly1g3c3x27crlj30fa042749.jpg
+[2019-05-24T12:08:10.873] [INFO] info - 美科技界″排华″升级：埃默里大学已开除李晓江夫妇
+[2019-05-24T12:08:10.874] [INFO] info - https://weibo.com/ttarticle/p/show?id=2309404375391769870618
+[2019-05-24T12:08:10.874] [INFO] info - https://tvax4.sinaimg.cn/crop.0.0.750.750.50/61e895aely8fop9awpv2oj20ku0kuwfk.jpg
+[2019-05-24T12:08:10.874] [INFO] info - 科学探索
+[2019-05-24T12:08:10.874] [INFO] info - 今天 08:35
+[2019-05-24T12:08:10.874] [INFO] info - 
+

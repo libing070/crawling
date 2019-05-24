@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var logger = require('node_log').logger.getLogger();
 // Cheerio 是一个Node.js的库， 它可以从html的片断中构建DOM结构，然后提供像jquery一样的css选择器查询
 var cheerio = require('cheerio');
 
@@ -99,19 +100,20 @@ function printInfo(slideListData) {
             var time = item.time;
 
             // 打印信息
-            console.log('第' + (++count) + '条数据');
-            console.log(url);
-            console.log(picurl);
-            console.log(title);
-            console.log(titleurl);
-            console.log(iconurl);
-            console.log(icontitle);
-            console.log(time);
-            console.log('\n');
+            logger.info('第' + (++count) + '条数据');
+            logger.info(url);
+            logger.info(picurl);
+            logger.info(title);
+            logger.info(titleurl);
+            logger.info(iconurl);
+            logger.info(icontitle);
+            logger.info(time);
+            logger.info('\n');
             //添加实例
             var  addSql = 'INSERT INTO crawlings(url,title,titleurl,picurl,iconurl,icontitle,time,createtime,createtimestring) VALUES(?,?,?,?,?,?,?,?,?)';
             var  addSqlParams =[url, title,titleurl,picurl,iconurl, icontitle,time,new Date(),new Date().getTime()+count];
             db.query(addSql,addSqlParams,function(result,fields){
+
             });
 
         });
